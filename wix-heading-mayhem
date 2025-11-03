@@ -1,0 +1,25 @@
+html
+
+<h4 class="wedding-heading">
+  <span class="names">EMMA & TRISTA</span>
+  <span class="event">A WEDDING</span>
+  <span class="location-primary">LOWNDES GROVE</span>
+  <span class="location-secondary">CHARLESTON SOUTH CAROLINA</span>
+</h4>
+
+css
+.wedding-heading {
+  display: flex;
+  flex-wrap: wrap;
+  /* Add their existing container styles */
+}
+
+.wedding-heading .names {
+  /* Blue block styles */
+}
+
+.wedding-heading .event {
+  /* Orange/rust styles */
+}
+
+/* etc for each span */
