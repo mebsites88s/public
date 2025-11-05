@@ -154,3 +154,38 @@ Embedding Vector:
 TL;DR:
 Their approach optimizes for an algorithm that doesn't exist. LLMs read like humans with 'perfect' memory context and coherence matter, not tag manipulation.
 weblinkr yes, relevance and authority.
+
+#References:
+
+Transformer Attention & Distance Decay:
+Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A. N., Kaiser, Ł., & Polosukhin, I. (2017). Attention is all you need. Advances in Neural Information Processing Systems, 30, 5998-6008. https://proceedings.neurips.cc/paper/2017/hash/3f5ee243547dee91fbd053c1c4a845aa-Abstract.html
+
+Establishes self-attention mechanism where token relationships decay with distance
+Foundation for understanding why proximity matters in embedding models
+
+Positional Embeddings & Document Structure:
+Devlin, J., Chang, M. W., Lee, K., & Toutanova, K. (2019). BERT: Pre-training of deep bidirectional transformers for language understanding. Proceedings of NAACL-HLT 2019, 4171-4186. https://aclanthology.org/N19-1423/
+
+Positional encodings allow models to understand document structure
+Shows HTML hierarchy has minimal impact vs. token sequence
+
+Semantic Clustering & Contextual Embeddings:
+Mikolov, T., Chen, K., Corrado, G., & Dean, J. (2013). Efficient estimation of word representations in vector space. arXiv preprint arXiv:1301.3781. https://arxiv.org/abs/1301.3781
+
+Word2vec establishes context window principles (typically 5-10 tokens)
+Co-occurrence within windows creates semantic relationships
+
+Schema.org for Knowledge Graphs:
+Guha, R. V., Brickley, D., & Macbeth, S. (2016). Schema.org: Evolution of structured data on the web. Communications of the ACM, 59(2), 44-51. https://doi.org/10.1145/2844544
+
+Structured data creates explicit entity relationships
+Used by Google and integrated into LLM training corpora
+
+RAG & Retrieval Systems:
+Lewis, P., Perez, E., Piktus, A., Petroni, F., Karpukhin, V., Goyal, N., ... & Kiela, D. (2020). Retrieval-augmented generation for knowledge-intensive NLP tasks. Advances in Neural Information Processing Systems, 33, 9459-9474. https://proceedings.neurips.cc/paper/2020/hash/6b493230205f780e1bc26945df7481e5-Abstract.html
+
+Shows how LLMs retrieve and weight content chunks
+Semantic relevance outweighs HTML tag hierarchy
+
+Note on "40% Distance Decay":
+That specific number was illustrative. Actual decay rates vary by model architecture and attention head configuration. Vaswani et al. (2017) establish the mathematical framework; specific decay curves are implementation-dependent.
