@@ -1,0 +1,156 @@
+Context:
+This,
+<h2>
+    <span>Welcome to Maximum Velocity's home page!</span>
+    <span>We're the fastest trucking people in the Atlanta area.</span>
+    <span>Moving, freight and storage are our specialty.</span>
+    <span>Price-matching guaranteed.</span>
+</h2>
+
+or this:
+<h1>Maximum Velocity</h1>
+<h2>Welcome to Maximum Velocity's home page!</h1>
+<p>We're the fastest trucking people in the Atlanta area.</p>
+<p>Moving, freight and storage are our specialty.</p>
+<p>Price-matching guaranteed.</p>
+
+Which is better for LLM, neither.
+
+**Ok, well it's morning in Australia and I'm having a nice coffee, so lets get my brain going for the day and break this down.**
+
+Your SEO partner fundamentally misunderstands how LLMs parse content (sort of gets it though). They think semantic weight comes from HTML tag hierarchy. It doesn't.
+How LLMs Actually Parse (and we'll just forget and AEO/RAG is just serp etc):
+LLMs use contextual embedding models that evaluate:
+
+-Token proximity (words near each other = related)
+-Semantic relationships (meaning, not markup)
+-Document structure patterns (natural information flow)
+
+so the H2 wrapper adds minimal signal. What matters is coherent context around keywords. So their versions fails in aspects, such as: Zero context density (wasted tokens on "welcome" and "home page"),
+, Keywords isolated in separate spans (broken semantic relationships), No supporting context for "price-matching" (orphaned claim), Reads like keyword stuffing to embeddings models (and lets be honest it is).
+
+a basic more correct version would be something like this:
+
+<section id="hero">
+<h1>Maximum Velocity Trucking - Atlanta</h1>
+
+<h2>Fast, Reliable Freight & Moving Services</h2>
+<p>Maximum Velocity provides Atlanta-area trucking, moving, freight transport, and secure storage solutions with price-matching guarantees. Our fleet delivers expedited service for commercial freight and residential moves throughout metro Atlanta.</p>
+
+<h3>Our Services</h3>
+<ul>
+  <li><strong>Commercial Freight:</strong> Time-critical deliveries across Atlanta's industrial corridors</li>
+  <li><strong>Residential Moving:</strong> Full-service packing, transport, and unpacking</li>
+  <li><strong>Secure Storage:</strong> Climate-controlled facilities with 24/7 access</li>
+</ul>
+</section>
+
+What is better here for LLM Parsing:
+
+-Contextual Density: Keywords embedded in meaningful phrases
+
+"expedited service" + "freight" = fast freight concept
+"Atlanta-area trucking" = location + service co-located
+
+-Semantic Relationships:
+
+"price-matching guarantees" connected to "provides...solutions"
+Service types linked to delivery descriptions
+
+-natural Language Flow:
+
+Matches training data patterns (how humans write service descriptions)
+Embeddings model recognizes standard business communication structure
+
+The Math:
+LLM attention mechanisms weight tokens by:
+
+Distance decay: Tokens 50+ words apart have ~40% reduced association strength
+Structural breaks: New headings reset contextual windows
+Semantic clustering: Related concepts need proximity for embedding space clustering
+
+Your Partner's Fear (AI Discounting Paragraphs):
+This reveals they think like 2010 Google SEO (keyword density in title tags). Where modern LLMs (since rankbrain etc), parse entire visible content blocks, weight based on semantic relevance, not tag hierarchy, use positional embeddings that track document structure naturally
+
+How I might do it if given the budget, and this is over the fucken top, so don't feel like you need to go here, but it illustrates optimal parsing, and note it's a another world away from the proposal:
+
+<section id="hero" itemscope itemtype="https://schema.org/LocalBusiness">
+  <h1 id="brand" itemprop="name">
+    <span itemprop="brand">Maximum Velocity</span> Trucking - 
+    <span itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <span itemprop="addressLocality">Atlanta</span>
+    </span>
+  </h1>
+  
+  <h2 id="tagline" itemprop="slogan">Fast, Reliable Freight & Moving Services</h2>
+  
+  <p id="value-proposition" itemprop="description">
+    Maximum Velocity provides 
+    <span itemprop="areaServed">Atlanta-area</span> 
+    <span itemprop="serviceType">trucking</span>, 
+    <span itemprop="serviceType">moving</span>, 
+    <span itemprop="serviceType">freight transport</span>, and 
+    <span itemprop="serviceType">secure storage</span> solutions with 
+    <span itemprop="priceRange">price-matching guarantees</span>. 
+    Our fleet delivers expedited service for commercial freight and residential moves throughout 
+    <span itemprop="areaServed">metro Atlanta</span>.
+  </p>
+  
+  <h3 id="services">Our Services</h3>
+  <ul itemprop="hasOfferCatalog" itemscope itemtype="https://schema.org/OfferCatalog">
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/Service">
+      <strong itemprop="name">Commercial Freight:</strong> 
+      <span itemprop="description">Time-critical deliveries across Atlanta's industrial corridors</span>
+      <meta itemprop="serviceType" content="FreightTransport"/>
+    </li>
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/Service">
+      <strong itemprop="name">Residential Moving:</strong> 
+      <span itemprop="description">Full-service packing, transport, and unpacking</span>
+      <meta itemprop="serviceType" content="MovingService"/>
+    </li>
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/Service">
+      <strong itemprop="name">Secure Storage:</strong> 
+      <span itemprop="description">Climate-controlled facilities with 24/7 access</span>
+      <meta itemprop="serviceType" content="StorageService"/>
+    </li>
+  </ul>
+</section>
+
+#Why i ThInK Works:
+
+#1Microdata Embedded in HTML** (not separate JSON-LD)
+   - LLMs trained on Schema.org patterns recognize these attributes
+   - Creates explicit semantic relationships between text fragments
+   - `itemprop="serviceType"` directly labels keywords for entity extraction
+
+#2 Hierarchical Entity Nesting
+   - LocalBusiness → contains → OfferCatalog → contains → Service items
+   - Mirrors how knowledge graphs structure information
+   - Transformer attention mechanisms weight parent-child relationships
+
+#3 Dual Parsing Paths
+   - Human-readable: natural prose flow
+   - Machine-readable: structured data embedded inline
+   - LLM attention heads can follow both simultaneously
+
+#4 Meta Tags for Disambiguation
+   - `<meta itemprop="serviceType" content="FreightTransport"/>`
+   - Invisible to users, explicit for parsers
+   - Connects natural language descriptions to ontology classes
+
+#The Embedding Math:
+```
+Token: "freight"
+Context Window: [-5, +5] tokens
+Schema Signal: itemprop="serviceType" 
+Entity Type: Service.FreightTransport
+
+Embedding Vector:
+- Baseline semantic: freight_vector
+- Context boost: +0.3 (proximity to "commercial", "time-critical")
+- Schema boost: +0.5 (explicit entity type declaration)
+- Result: Higher confidence entity extraction
+
+TL;DR:
+Their approach optimizes for an algorithm that doesn't exist. LLMs read like humans with 'perfect' memory context and coherence matter, not tag manipulation.
+weblinkr yes, relevance and authority.
