@@ -1,0 +1,100 @@
+<metadata>
+  <title>[Project Title]</title>
+  <description>[Brief description of what this accomplishes]</description>
+  <category>[Main category]</category>
+  <subfolder>[Subcategory if needed]</subfolder>
+  <tags>[Comma-separated tags]</tags>
+  <created>[ISO8601 timestamp]</created>
+  <brand>[Your brand/company]</brand>
+  <citation_format>APA</citation_format>
+</metadata>
+
+<role>
+[Define Claude's expertise and perspective for this task]
+</role>
+
+<language>
+[Programming language, version, or natural language specification]
+</language>
+
+<task>
+[Clear, bulleted list of what needs to be accomplished]
+</task>
+
+<context>
+[Background information including:
+- Existing workflow/systems
+- File structure
+- Data formats
+- Environment details]
+</context>
+
+<source_paths>
+[List of relevant file paths or data sources]
+
+NOTE: [Any special access instructions]
+</source_paths>
+
+<dependencies>
+[Required packages, libraries, or tools with versions]
+</dependencies>
+
+<examples>
+[Input/output examples showing expected behavior]
+</examples>
+
+<tests>
+[Test scenarios including:
+- Happy path
+- Edge cases
+- Error conditions
+- Idempotency checks]
+</tests>
+
+<performance_requirements>
+[Constraints on:
+- Execution time
+- API calls
+- Memory usage
+- Other performance metrics]
+</performance_requirements>
+
+<output_format>
+[Structured format for results including:
+- Data structure
+- Console output style
+- Error message format]
+</output_format>
+
+<output_path>
+[Where final output should be saved]
+
+NOTE: [Any special save instructions]
+</output_path>
+
+<constraints>
+[Hard requirements and limitations]
+</constraints>
+
+<style_guide>
+[Formatting preferences:
+- Citation style
+- Naming conventions
+- Code style
+- Branding elements
+- User preferences]
+</style_guide>
+
+<error_handling>
+[Potential issues and solutions:
+- Common failures
+- Alternative approaches
+- Recovery strategies]
+</error_handling>
+
+<thinking>
+[Design rationale:
+- Why certain approaches chosen
+- Trade-offs considered
+- Implementation decisions]
+</thinking>
