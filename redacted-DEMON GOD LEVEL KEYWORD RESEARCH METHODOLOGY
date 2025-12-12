@@ -2,8 +2,7 @@
 **Systematic Layered Intelligence Framework**  
 **Version:** 2.6  
 **Documented:** 2025-12-12  
-**Based on:** ####### ##### expansion research (actual implementation)
-**example: "\####**
+**Based on:** Multi-client implementation across tourism, service, and local business verticals
 
 ---
 
@@ -24,7 +23,6 @@
 - Multi-location normalized capture (7+ locations averaged)
 - Quantitative data extraction supporting qualitative analysis
 - Data Scrapping, parsing and analysis
-- Adwords scrapping
 - RAG Token Analysis across big 4 LLM
 - Generative grammar and LLM parsing for content/pattern analysis
 - APA citations, in text citations and references doc for credible claims
@@ -34,8 +32,8 @@
 - Medium certainty: Industry reports, competitor claims, inferred patterns
 - Low certainty: Estimates, projections, unverified claims
 - Speculative: Trend predictions, market forecasts
-- Analyis manual insight
-- Gemini Generative Intergation insights
+- Analysis manual insight
+- Gemini Generative Integration insights
 
 **Generative Grammar Application:**
 - Using linguistic pattern analysis to identify underlying content structures, 
@@ -45,7 +43,7 @@
 
 All low certainty and speculative claims must be labeled as such in deliverables.
 
-**Not Using:** Paid tools (Ahrefs, SEMrush, MOZ subscriptions). Using: Primarily a collection of scrapping and parsing scripts and quantatitive analysis scripts. Free browser extensions for DA/backlink overlay on SERP result snapshot images, dataforseo api, GSC MCP, Adwords Scripting tools. 
+**Not Using:** Paid tools (Ahrefs, SEMrush, MOZ subscriptions). Using: Primarily a collection of scraping and parsing scripts and quantitative analysis scripts. Free browser extensions for DA/backlink overlay on SERP result snapshot images, dataforseo api, GSC MCP, Adwords Scripting tools. 
 
 ---
 
@@ -66,9 +64,9 @@ All low certainty and speculative claims must be labeled as such in deliverables
 - Industry reports and market research
 - Regulatory frameworks and legal precedents
 - Professional services firm analysis (PwC, Deloitte)
-- Consumer advocy groups and non profits
+- Consumer advocacy groups and non profits
 - Ground intelligence and local market observation
-- LLM Generative Interogation
+- LLM Generative Interrogation
 
 **Output Format:**
 Comprehensive market overview integrated into general keyword document, providing context for all subsequent strategic decisions.
@@ -500,7 +498,6 @@ Academic credibility for regulatory and market claims, differentiation from comp
 - Entity discover script
 - GBP Scrap analysis scripting
 - Internal Quantitative analysis scripts
-- 
 - Gemini and other LLM generative interrogation reports
 
 **Supplementary Sources:**
@@ -587,13 +584,13 @@ A layered or passes process, where more intelligence begets more intelligence.
 - SMB: Phases 1-3, abbreviated Phase 4
 - Mid-market: Full methodology
 - Enterprise: Add international expansion research
-- Gov: Full methodolgy
+- Gov: Full methodology
 
 ---
 
 ## PHASE 6: STRATEGIC IMPLEMENTATION (PROPRIETARY)
 
-Research outputs feed PixelOni.ai's proprietary Quantatitive SERP modeling system which:
+Research outputs feed PixelOni.ai's proprietary Quantitative SERP modeling system which:
 - Generates ideal state models from research and analysis
 - Gap analysis vs current client state
 - Priority sequencing based on quantitative risk/reward modeling
