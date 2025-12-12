@@ -24,6 +24,7 @@
 - Multi-location normalized capture (7+ locations averaged)
 - Quantitative data extraction supporting qualitative analysis
 - Data Scrapping, parsing and analysis
+- Adwords scrapping
 - RAG Token Analysis across big 4 LLM
 - Generative grammar and LLM parsing for content/pattern analysis
 - APA citations, in text citations and references doc for credible claims
