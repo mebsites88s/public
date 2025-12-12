@@ -1,0 +1,700 @@
+# PIXELONI.AI DEMON GOD LEVEL KEYWORD RESEARCH METHODOLOGY
+**Systematic Layered Intelligence Framework**  
+**Version:** 2.6  
+**Documented:** 2025-12-12  
+**Based on:** Multi-client implementation across tourism, service, and local business verticals
+
+---
+
+## RESEARCH PHILOSOPHY
+
+**Layered Intelligence Approach:**
+1. Broad market reconnaissance (demographics, economics, regulations)
+2. Keyword discovery across locations
+3. Competitive intelligence with weighted scoring
+4. Forensic SERP analysis with quantitative metrics
+5. Strategic synthesis applying generative grammar and LLM parsing techniques
+6. Entity discovery
+7. Consumer decision journey (McKinsey's model & Engel-Kollat-Blackwell model)
+8. Road to a sale process
+
+**Evidence-Based Foundation:**
+- Manual SERP screenshots with free Chrome extension overlays (DA/backlink visibility)
+- Multi-location normalized capture (7+ locations averaged)
+- Quantitative data extraction supporting qualitative analysis
+- Data Scrapping, parsing and analysis
+- RAG Token Analysis across big 4 LLM
+- Generative grammar and LLM parsing for content/pattern analysis
+- APA citations, in text citations and references doc for credible claims
+
+**Certainty Weighting Scale:**
+- High certainty: Government data, direct SERP observation, cited sources
+- Medium certainty: Industry reports, competitor claims, inferred patterns
+- Low certainty: Estimates, projections, unverified claims
+- Speculative: Trend predictions, market forecasts
+- Analysis manual insight
+- Gemini Generative Integration insights
+
+**Generative Grammar Application:**
+- Using linguistic pattern analysis to identify underlying content structures, 
+- semantic relationships, and syntactic patterns in competitor content that 
+- signal authority, user intent alignment, and topical relevance beyond 
+- surface-level keyword matching.
+
+All low certainty and speculative claims must be labeled as such in deliverables.
+
+**Not Using:** Paid tools (Ahrefs, SEMrush, MOZ subscriptions). Using: Primarily a collection of scraping and parsing scripts and quantitative analysis scripts. Free browser extensions for DA/backlink overlay on SERP result snapshot images, dataforseo api, GSC MCP, Adwords Scripting tools. 
+
+---
+
+## PHASE 1: MARKET RECONNAISSANCE
+
+### Market Intelligence Gathering
+**Deliverable:** Embedded in `keywords-[market]-general.md`
+
+**Research Components:**
+- Demographics (tourist volumes, nationalities, spending patterns)
+- Economic factors (pricing benchmarks, rental costs, seasonality)
+- Regulatory environment (business structures, foreign ownership constraints)
+- Infrastructure assessment (accessibility, safety, crime statistics)
+- Cultural context (tourist psychographics, behavioral patterns)
+
+**Data Sources:**
+- Government tourism statistics (cited in APA format)
+- Industry reports and market research
+- Regulatory frameworks and legal precedents
+- Professional services firm analysis (PwC, Deloitte)
+- Consumer advocacy groups and non profits
+- Ground intelligence and local market observation
+- LLM Generative Interrogation
+
+**Output Format:**
+Comprehensive market overview integrated into general keyword document, providing context for all subsequent strategic decisions.
+
+---
+
+## PHASE 2: KEYWORD DISCOVERY
+
+### General Market Keywords
+**Deliverable:** `keywords-[market]-general.md`
+
+**Structure:**
+- Main money keywords (1x primary)
+- Secondary money keywords (3x)
+- Third tier money keywords (10x)
+- 100 primary variants (weighted by commercial intent)
+- 100 LSI keywords (semantic relevance)
+- 50 style-specific keywords
+- 50 artist/celebrity keywords
+- 50 safety/hygiene keywords (critical for tourist conversion)
+- Top 50 Trending Keywords
+- Search volume data (where available)
+- Multi-language opportunities
+- Competitive intelligence keywords
+
+**Research Method:**
+1. Seed keywords from market analysis
+2. Google autocomplete harvesting
+3. Related searches extraction
+4. "People Also Ask" collection
+5. Competitor keyword analysis via SERP observation
+6. Long-tail variations from semantic clustering
+
+**Weighting Criteria:**
+- Commercial intent (purchase readiness)
+- Tourist decision-making patterns
+- Safety/quality concern alignment
+- Volume vs competition balance
+- Local intent strength
+- Online Purchase intent
+- Early funnel research
+- Ready action intent
+
+### Location-Specific Keywords
+**Deliverables:** `location-analysis-[YYYYMMDD]-[HHMM].md` (one per target area)
+
+**Structure Per File:**
+- Primary keywords (location-modified)
+- Secondary keywords (supporting terms)
+- Topical keywords (semantic/contextual)
+- Local modifiers (area-specific variations)
+- Related searches
+- People Also Ask questions
+- Entities
+
+**File Naming Convention:**
+**Complete File Naming:**
+- `keywords-general-[country]-[YYYYMMDD]-[HHMM].md`
+- `location-analysis-[YYYYMMDD]-[HHMM].md`
+- `competitor-analysis-[market]-[YYYYMMDD]-[HHMM].md`
+- `deep-dive-serp-[market]-[YYYYMMDD]-[HHMM].md`
+- `references-[topic]-[YYYYMMDD]-[HHMM]-APA.md`
+- `keywords-[location]-[YYYYMMDD]-[HHMM].md`
+- `keywords-[page slug]-[YYYYMMDD]-[HHMM].md`
+- `quick-serp-analysis-[YYYYMMDD]-[HHMM].md`
+- `entity-serp-analysis-[YYYYMMDD]-[HHMM].md`
+ 
+Examples: 
+- `keywords-canggu-20251112-1247.md`
+- `keywords-melbourne-20250121-1824.md`
+- `keywords-gold-coast-20211201-2107.md`
+- `keywords-queensland-20250527-1547.md`
+- `keywords-austin-20251010-0931.md`
+
+**Integration:** Location analysis embedded within each file (demographics, infrastructure, competitive density, strategic positioning).
+
+---
+
+## PHASE 2.5: QUICK REFERENCE EXTRACTION
+
+### Strategic Keyword Prioritization
+**Deliverable:** `quick-reference-top-50.md` (and `.json` variant)
+
+**Purpose:**
+Distills 300+ discovered keywords into actionable top 50 priorities for immediate implementation, organized by page type and commercial intent hierarchy.
+
+**Timing:**
+Executed after Phase 2 keyword discovery completion, before deep SERP analysis begins. Provides focused target list for Phase 4 forensic analysis.
+
+**Structure:**
+```markdown
+QUICK REFERENCE KEYWORD GUIDE
+TOP 50 PRIORITY KEYWORDS FOR IMMEDIATE IMPLEMENTATION
+(Organized by page type and commercial intent)
+
+HOMEPAGE KEYWORDS (5):
+- Primary money keywords
+- Brand + location combinations
+- Highest commercial intent
+
+PRIMARY SERVICE/PRODUCT PAGES (15-25):
+- Core offerings + location/modifier
+- Unique value propositions
+- Niche differentiation opportunities
+
+CATEGORY/STYLE LANDING PAGES (10-15):
+- Service/product category + location
+- Specializations
+- Semantic variations
+
+TRANSACTIONAL/CONVERSION PAGES (5-10):
+- Transaction-focused terms
+- Process-related queries
+- Conversion intent keywords
+
+ADDITIONAL CATEGORIES as applicable:
+- Training/education keywords
+- Location-specific variants
+- Seasonal/temporal opportunities
+```
+
+**Selection Criteria:**
+1. Commercial intent strength (purchase readiness)
+2. Competitive gap opportunities (low competition, adequate volume)
+3. Natural language match to site architecture
+4. Customer decision-making alignment
+5. Conversion funnel positioning
+
+**Dual Format Storage:**
+- `.md` version for human readability and documentation
+- `.json` version for programmatic access and CMS integration
+
+**JSON Structure:**
+```json
+{
+  "metadata": {
+    "title": "CLIENT - QUICK REFERENCE KEYWORD GUIDE",
+    "generated_by": "PixelOni.ai",
+    "organization": "Organized by page type and commercial intent",
+    "client": "client-name",
+    "market": "target-market",
+    "date_created": "YYYY-MM-DD"
+  },
+  "homepage": {
+    "category": "Homepage Keywords",
+    "count": 5,
+    "keywords": []
+  },
+  "primary_pages": {
+    "category": "Primary Service/Product Keywords",
+    "count": 20,
+    "keywords": {}
+  },
+  "category_pages": {
+    "category": "Category/Style Landing Pages",
+    "count": 15,
+    "keywords": {}
+  },
+  "transactional_pages": {
+    "category": "Transactional/Conversion Keywords",
+    "count": 5,
+    "keywords": []
+  },
+  "additional_categories": {
+    "category": "Additional Strategic Keywords",
+    "keywords": {}
+  }
+}
+```
+
+**Integration Points:**
+- Feeds Phase 4 SERP analysis (screenshot target list)
+- Informs site architecture decisions
+- Guides content brief creation
+- Maps to ideal state modeling in Phase 6
+
+**File Location:**
+`\\[network-path]\Websites\[client]\[project]\keywords\quick-reference-top-50.md`
+`\\[network-path]\Websites\[client]\[project]\keywords\quick-reference-top-50.json`
+
+**Time Investment:** 1-2 hours for strategic distillation from full discovery dataset
+
+**Quality Criteria:**
+- Each keyword must map to specific page/template
+- No keyword overlap between categories
+- Clear commercial intent hierarchy
+- Actionable for immediate technical implementation
+- Balance between aspiration and achievability
+
+---
+
+## PHASE 3: COMPETITIVE INTELLIGENCE
+
+### Competitor Deep-Dive Analysis
+**Deliverable:** `competitor-analysis.md`
+
+**Weighted Scoring System:**
+- Google Reviews volume (Primary indicator - customer throughput)
+- Instagram following (Secondary - brand strength/marketing effectiveness)
+- Search prominence (Tertiary - SEO strength/market recognition)
+- Established reputation (Tiebreaker - longevity/awards)
+
+**Analysis Per Location:**
+- Top 3 competitors ranked by weighted score
+- Key strengths documented
+- Pricing positioning
+- Specializations identified
+- SEO strength assessment
+- Social media metrics
+- Honorable mentions (runners-up)
+
+**Cross-Location Intelligence:**
+- Dominant multi-location brands
+- Competitive benchmarks (reviews, followers, pricing)
+- Common competitive advantages
+- Differentiation strategies observed
+- Market gaps and opportunities
+
+**Output Focus:**
+Actionable intelligence for positioning strategy, not just competitive listing.
+
+---
+
+## PHASE 4: FORENSIC SERP ANALYSIS
+
+### Screenshot Capture Protocol
+**Storage:** `serp-analysis-snapshots/`
+
+**Capture Requirements:**
+- Manual intervention to create screen shots from list supplied by Claude
+- Free Chrome extension installed keywordseverywhere (DA/backlink overlay)
+- Multi-location testing (7+ locations)
+- Geolocation methodology documented
+- Normalized/averaged results
+- Screenshot extention per primary keyword
+
+**Manual Screenshot Protocol:**
+1. LLM generates target keyword list with geolocation parameters
+2. Human/script captures screenshots with extension overlays active
+3. Screenshots saved to designated folder with timestamp naming
+4. LLM analyzes uploaded screenshots for DA/backlink extraction
+5. Quantitative data compiled for pattern analysis
+
+**Locations for Clients:**
+[National if required for perspective] + [target state] + [target city] + [rare occasions suburbs or places of interest] (target international location if applicable)
+
+**File Naming:**
+`[keyword]-search-[YYYYMMDD]-[HHMMSS].png`
+
+Example: `######-search-20251111-143022.png`
+
+### Deep-Dive Forensic Analysis
+**Deliverable:** `deep-dive-serp-analysis.md`
+
+**Analysis Framework:**
+
+#### Executive Summary
+- 3-5 key findings
+- Cross-keyword competitive landscape
+- Dominant players identification
+- Critical market intelligence
+
+#### 1. Domain Authority & Backlink Patterns
+- DA ranges for positions 1-5 per query
+- Referring domains counts
+- Traffic percentages
+- Keyword rankings
+- DA/position correlation analysis
+- Outlier identification (high rank despite low DA)
+
+#### 2. Map Pack Dominance Analysis
+- Review counts and ratings
+- Map Pack position analysis
+- Geographic clustering patterns
+- Review velocity indicators
+
+#### 3. SERP Feature Documentation
+- Map Pack composition
+- Image packs
+- People Also Ask questions (exact text)
+- Featured snippets
+- Related searches (full extraction)
+- Video carousels
+- Knowledge panels
+
+#### 4. Content Type Classification
+Every top result categorized:
+- Portfolio showcase
+- Directory/aggregator
+- Informational/educational
+- Booking/transactional
+- Social/forum discussion
+- News/blog
+
+#### 5. Title Tag & Meta Patterns
+- Exact title tags extracted (top 5 per query)
+- Keyword placement patterns
+- Brand positioning strategies
+- Title formulas identified
+- CTR optimization tactics
+
+#### 6. Schema & Rich Snippet Identification
+- Star ratings prevalence
+- AggregateRating implementation
+- LocalBusiness schema
+- FAQ schema usage
+- Schema gaps (opportunities)
+
+#### 7. URL Structure Analysis
+- Exact match domains (EMD)
+- Subdirectory strategies
+- Location-specific URL patterns
+- URL optimization tactics
+
+#### 8. Competitive Overlap Mapping
+- Domains appearing across multiple queries
+- Frequency counts
+- Position variance analysis
+- Cross-keyword market dominance
+
+#### 9. Keyword Intent Analysis
+- Commercial vs informational balance
+- Local intent strength
+- Urgency signals
+- Research phase indicators
+
+#### Strategic Recommendations
+- Evidence-based action items
+- Competitive positioning matrix
+- Entry difficulty by location/keyword
+- Phased implementation plan
+
+**Time Investment:** ### hours for comprehensive forensic analysis
+
+---
+
+## PHASE 5: STRATEGIC SYNTHESIS
+
+### APA-Cited Sources
+**Deliverable:** `references-[topic]-APA.md`
+
+**Format:** Strict APA 7th Edition
+- Hanging indents (4 spaces)
+- Alphabetical by author
+- Retrieval dates for websites
+- DOIs where applicable
+- "REFERENCES" heading
+
+**Source Categories:**
+- Government sources
+- International organizations (UN, World Bank)
+- Professional services firms (consulting)
+- Industry organizations (bias acknowledged)
+- Consumer advocacy organizations (bias acknowledged)
+- Credible industry websites (quality noted)
+- Academic research (credible and relevant, if not mark **Speculative**)
+
+**Purpose:**
+Academic credibility for regulatory and market claims, differentiation from competitors lacking cited sources.
+
+---
+
+## FILE ORGANIZATION STRUCTURE
+
+```
+\\[network-path]\Websites\[client]\[project]\keyword-research\
+│
+├── METHODOLOGY-keyword-research.md          (this file)
+│
+├── keywords-[market]-general.md             (Phase 1 & 2 combined)
+│
+├── keywords-[location-1].md                 (Phase 2)
+├── keywords-[location-2].md                 (Phase 2)
+├── keywords-[location-n].md                 (Phase 2)
+│
+├── competitor-analysis.md                   (Phase 3)
+│
+├── deep-dive-serp-analysis.md               (Phase 4 - flagship report)
+│
+├── serp-analysis-snapshots\                 (Phase 4)
+│   ├── [keyword]-search-[timestamp].png
+│   └── [additional screenshots]
+│
+└── references-[topic]-APA.md                (Phase 5)
+```
+
+**JSON Files:** May exist as duplicates of .md files for structured data, but .md files are original source of truth.
+
+---
+
+## TOOLS & RESOURCES
+
+### Browser Extensions (Free)
+- DA/backlink overlay extension (MOZ Bar, keywords anywhere any thing similar free alternative)
+- Keywords Everywhere (free tier for basic data)
+
+### Software
+- VPN (multi-location testing)
+- Google Ads Preview Tool (geo-specific SERPs)
+- Screenshot tool (Lightshot, Greenshot, built-in)
+- GSC
+- GA
+- HotJar
+- PixelOni.ai Tool
+- SEOanalysis.ai Tooling
+- Python scraping scripts (Selenium/BeautifulSoup)
+- Data analysis scripts (pandas/numpy)
+- Prompt templates for LLM parsing
+- Gemini scripts for generative interrogrations
+
+### Analysis Methods
+- Quantitative data extraction from SERP overlays
+- Generative grammar analysis for content patterns
+- LLM parsing for competitive intelligence extraction
+- Manual observation and synthesis
+- Gemini AI generative Integration methods
+
+### Data Sources
+**Primary Sources:**
+- dataforseo api
+- Government statistics portals
+- Quality published and cited research studies
+- Direct SERP observation and manual analysis
+- Client data (nap-truth.json, GBP scraps, page snapshots)
+
+**Analysis Tools:**
+- Page Optimiser Pro, CORA
+- Snapshot analysis scripting
+- Entity discover script
+- GBP Scrap analysis scripting
+- Internal Quantitative analysis scripts
+- Gemini and other LLM generative interrogation reports
+
+**Supplementary Sources:**
+- Consumer advocate groups (bias acknowledged)
+- Industry reports (free/accessible)
+- Local high ranking information websites
+- Competitor website analysis
+
+---
+
+## ACTUAL PROCESS FLOW
+
+### What Really Happens
+
+A layered or passes process, where more intelligence begets more intelligence.
+
+1. **Market Research Phase** (# hours)
+   - Demographics, economics, regulations gathered
+   - Tourism data, spending patterns, seasonality analyzed
+   - Embedded directly into general keywords file
+
+2. **Keyword Discovery Phase** (# hours)
+   - General market keywords documented (300+ terms)
+   - Location-specific variants created
+   - Semantic clustering applied
+   - Intent classification completed
+
+3. **Competitive Intelligence Phase** (# hours)
+   - Top 3 competitors per location identified
+   - Weighted scoring applied (reviews/followers/prominence)
+   - Differentiation strategies extracted
+   - Market gaps documented
+
+4. **Forensic SERP Phase** (# hours)
+   - 6-8 primary keywords captured across 7 locations
+   - DA/backlink data extracted from overlays
+   - Pattern analysis completed
+   - Strategic recommendations synthesized
+
+5. **Documentation Phase** (# hours)
+   - APA citations formatted
+   - Cross-references verified
+   - Quality control completed
+
+**Total Time:** # hours for comprehensive research project
+
+---
+
+## QUALITY CONTROL
+
+### Before Delivering
+- [ ] All location keyword files created
+- [ ] Screenshots properly named and stored
+- [ ] Competitor analysis has weighted scoring
+- [ ] Deep-dive SERP covers all analysis sections
+- [ ] APA sources use proper hanging indents
+- [ ] Geolocation methodology documented
+- [ ] Strategic recommendations evidence-based
+- [ ] File naming conventions followed
+- [ ] Cross-references verified
+- [ ] Client branding applied
+
+---
+
+## ADAPTATION NOTES
+
+### Industry Scaling
+- Service businesses: Full methodology
+- E-commerce: Add product schema analysis
+- Local services: Emphasis on Map Pack
+- Org: Multi-location
+- Gov: Focus on Accessibility and direct search to page
+- Enterprise: 
+- Major Brand:
+- International: Multi-language expansion
+
+### Market Scaling
+- Cross check different locations in citys, states, countries
+- Saturated markets: 15-20 competitors analyzed 
+- Niche markets: 5-10 competitors sufficient
+- Emerging markets: Opportunity gap focus
+
+### Client Scaling
+- SMB: Phases 1-3, abbreviated Phase 4
+- Mid-market: Full methodology
+- Enterprise: Add international expansion research
+- Gov: Full methodology
+
+---
+
+## PHASE 6: STRATEGIC IMPLEMENTATION (PROPRIETARY)
+
+Research outputs feed PixelOni.ai's proprietary Quantitative SERP modeling system which:
+- Generates ideal state models from research and analysis
+- Gap analysis vs current client state
+- Priority sequencing based on quantitative risk/reward modeling
+- Resource allocation across concurrent client projects
+- Machine learning feedback loops for continuous optimization
+
+**Methodology documentation:** Internal PixelOni.ai systems only. Not included in 
+client deliverables.
+
+---
+
+## VERSIONING
+
+**########################**
+- ##############
+- ##############
+- ##############
+- ##############
+
+**########################**
+- ##############
+- ##############
+- ##############
+- ##############
+
+**Version 2.0 (2022-01-25):**
+- Documented actual implementation vs theoretical process
+- Removed paid tool dependencies
+- dataforseo
+- added group buy tools
+- Corrected file structure to match reality
+- Added quantitative/LLM parsing methodology
+- Clarified embedded vs separate location analysis
+
+**########################**
+- ##############
+- ##############
+- ##############
+- ##############
+
+**Version 1.0 (2015-07-09):**
+- Initial theoretical framework (deprecated - did not match actual work)
+
+**Research Asset Versioning:**
+- Added RankBrain Strategy
+- Keyword files: Date-stamped for historical comparison
+- SERP snapshots: Dated for competitive tracking over time
+- Competitor analysis: Quarterly updates recommended
+- Deep-dive reports: Annual refresh for mature markets, quarterly for emerging
+
+**########################**
+- ##############
+- ##############
+- ##############
+- ##############
+
+**########################**
+- ##############
+- ##############
+- ##############
+- ##############
+---
+
+## CLIENT QUOTING FRAMEWORK
+
+-Generally this is internal documentation only and not a line item for sale.  Clients may request the documents, but generally, we only release the basic version for free as part of their monthy subscription, due to copyright issue and competitive IP use by competiting marketing agencies.
+
+**Time-Based Estimates:**
+- SMB project (1-3 locations): #### hours → $###.00
+- Mid-market (4-7 locations): #### hours → $###.00
+- Enterprise (8+ locations, international): #### hours → $###.00
+
+**Deliverables Pricing:**
+- Full methodology: [price]
+- Abbreviated (Phases 1-3 only): [price]
+- Quick competitive scan: [price]
+- Quarterly refresh: [price]
+
+**Note on Front-Loaded Research Pricing:**
+Keyword research represents foundational intelligence with 12-56 month relevance. 
+Pricing reflects one-time comprehensive analysis that informs ongoing strategy, 
+technical implementation, and content production across the engagement lifecycle. 
+Quarterly refreshes as needed update competitive landscape and seasonal patterns.
+
+## METHODOLOGY APPLICABILITY
+
+**This methodology applies to ALL client engagements** regardless of:
+- Search volume (micro-niches with 10 searches/month can justify research if conversion value is high)
+- Brand vs non-brand queries (brand intelligence is competitive intelligence)
+- Technical audit requirements (this research feeds the ideal state model)
+- Link building needs as required basis, approach is binary enough/not enough we do not use link analysis tools like Arefs, Semrush as some type of imaginary bench mark.
+- Link Analysis done using internal tooling, dataforseo and factual 
+- Computational Linguistics synthesis research documentation
+- Quantitative Fin Math research documentation
+- RAG retrieval parsing research concise version
+- Graph theory network research documentation
+
+**The only exception:** Emergency reactive work requiring <24 hour turnaround where 
+abbreviated quick-SERP analysis substitutes for full forensic process.
+
+**Research compiled by: PixelOni.ai**  
+**Manually Reviewed by Lead Analyst:** Satanzhand  
+**Methodology:** Evidence-based layered intelligence with quantitative SERP analysis
+
+---
+
+*This methodology documents the actual process used, not an idealized theoretical framework. File structure, tools, and workflow reflect implementation reality. It is the sole Intellectual Property of PixelOni.ai, seoanalysis.ai and parent Mebsites*
